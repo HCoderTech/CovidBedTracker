@@ -137,7 +137,7 @@ if __name__ == '__main__':
     nexttime = time.time()
     while True:
         get_bed_details()  # take t sec
-        nexttime += 10
+        nexttime += 1800
         sleeptime = nexttime - time.time()
         if sleeptime > 0:
             time.sleep(sleeptime)
